@@ -17,7 +17,7 @@ void RelayOTA::begin () {
     MDNS.addService("http", "tcp", 80);
 }
 
-void RelayOTA::process () {
+void RelayOTA::handle () {
     ArduinoOTA.handle();
     httpServer.handleClient();
     MDNS.update();

@@ -9,7 +9,7 @@ class RelayOTA {
     public:
         void begin ();
         void otaSetup ();
-        void process ();
+        void handle ();
 };
 
 #endif

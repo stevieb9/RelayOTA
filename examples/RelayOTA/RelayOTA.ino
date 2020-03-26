@@ -19,6 +19,6 @@ void setup() {
 
 void loop() {
     if (OTA) {
-        ota.process();
+        ota.handle();
     }
 }
